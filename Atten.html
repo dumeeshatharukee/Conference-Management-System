@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Attendance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #adfa96;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="datetime-local"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        button {
+            width: 50%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .success {
+            color: green;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .error {
+            color: red;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Add Attendance</h1>
+        <form action="Atten.php" method="POST">
+       
+        <form method="POST">
+            <label>Participant ID:</label>
+            <input type="text" name="participant_id" required><br>
+            <label>Session ID:</label>
+            <input type="text" name="session_id" required><br>
+            <label>Time:</label>
+            <input type="" name="time" required><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

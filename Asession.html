@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Session</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:rgb(186, 239, 178);
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+        }
+        form {
+            width: 50%;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="datetime-local"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        .success {
+            color: green;
+            text-align: center;
+        }
+        .error {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Session</h1>
+    <form action="Asession.php" method="POST">
+    <form method="POST">
+        <label>Session ID:</label>
+        <input type="text" name="session-id" required>
+        <label>Track ID:</label>
+        <input type="text" name="track_id" required>
+        <label>Title:</label>
+        <input type="text" name="title" required>
+        <label>Speaker:</label>
+        <input type="text" name="speaker" required>
+        <label>Time:</label>
+        <input type="" name="time" required>
+        <label>Venue:</label>
+        <input type="text" name="venue" required>
+        <label>Capacity:</label>
+        <input type="number" name="capacity" required>
+        <label>Registered Count:</label>
+        <input type="number" name="registered_count" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

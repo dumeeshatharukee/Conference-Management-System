@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="./icon.jpg" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conference Day Management System</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Countdown Timer Script
+    const conferenceDate = new Date('April 25, 2024 00:00:00').getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = conferenceDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000)) / 1000);
+
+      const timerElement = document.getElementById('timer');
+      if (distance > 0) {
+        timerElement.innerHTML = `${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
+      } else {
+        timerElement.innerHTML = "The conference has started!";
+      }
+    }
+
+    // Update countdown every second
+    setInterval(updateCountdown, 1000);
+  </script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Conference Management- 2024</div>
+    <div class="nav-links">
+     
+      
+    </div>
+  </nav>
+
+  <div id="home">
+    <section class="welcome">
+      <h1>Welcome to the International Research Conference 2024</h1>
+      <p>Join us for an exciting event filled with innovation and collaboration. Explore cutting-edge research and connect with global experts.</p>
+     
+    </section>
+  
+    <section class="overview">
+      <h2>Conference Overview</h2>
+      <p><strong>Date:</strong> April 25-27, 2024       | <strong>Location:</strong> @ITUM Main Auditorium</p>
+      <div class="countdown">
+        <h3>Countdown to Conference Day:</h3>
+        <div id="timer">0 Days 0 Hours 59 Minutes</div>
+      </div>
+    </section>
+  
+    <section class="speakers">
+      <h1>Guest speakers</h1>
+      <div class="speaker-grid">
+        <div class="speaker">
+          <img src="lec1.jpg" alt="Speaker 1">
+          <h3>Dr. S.Senarath</h3>
+          <p>Pro.of MIT,University of peradeniya</p>
+        </div>
+        <div class="speaker">
+          <img src="lec2.jpg" alt="Speaker 2">
+          <h3>Dr.Abesekara</h3>
+          <p>Pro.of Economic,university of Ruhuna </p>
+        </div>
+        <div class="speaker">
+          <img src="lec3.jpg" alt="Speaker 2">
+          <h3>Dr.Jayawardhana</h3>
+          <p>Prof.of Civil Engineering,university of Moratuwa</p>
+        </div>
+</div>
+</section>
+
+    
+  
+    <section class="updates">
+      <h2>News & Updates</h2>
+      <ul>
+        <li><strong>March 15:</strong> Registration deadline for sessions.</li>
+        <li><strong>April 10:</strong> Final conference schedule released.</li>
+      </ul>
+    </section>
+  
+    <footer>
+      <p>&copy; 2024 International Research Conference. All rights reserved.</p>
+      <a href="#contact">Contact Us - +94472243550</a>
+    </footer>
+  </div>
+</body>
+</html>

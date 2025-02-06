@@ -1,0 +1,140 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f94c;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0056b3;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.navbar .nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Welcome Section */
+.welcome {
+  text-align: center;
+  padding: 40px;
+  background: url('background.jpg') no-repeat center center/cover;
+  color: white;
+}
+
+.welcome h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.welcome p {
+  font-size: 1.2em;
+}
+
+/* Overview Section */
+.overview {
+  text-align: center;
+  padding: 2px;
+  background-color: #d8f0f7f8;
+  
+}
+
+.countdown {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #d3000e;
+}
+
+/* Speakers Section */
+.speakers {
+  padding: 40px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.speaker-grid {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.speaker {
+  text-align: center;
+  max-width: 200px;
+}
+
+/* Oval-shaped speaker images */
+.speaker img {
+  width: 100%;
+  border-radius: 50%; /* Makes the images oval */
+  object-fit: cover; /* Ensures the image content is properly scaled within the shape */
+  aspect-ratio: 1 / 1; /* Ensures the images maintain a square aspect ratio before becoming oval */
+}
+
+
+.speaker h1 {
+  margin: 10px 0 5px;
+}
+
+/* Updates Section */
+.updates {
+  padding: 30px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.updates h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.updates ul {
+  list-style: none;
+}
+
+.updates ul li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0056b3;
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+

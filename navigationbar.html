@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="./icon.jpg" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conference Day Management System</title>
+
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e6e6e6; 
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #004c8c;
+      color: rgb(246, 246, 18);
+      padding: 10px 20px;
+    }
+    
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+    }
+    .navbar a:hover {
+      background-color: #0073e6;
+      border-radius: 5px;
+    }
+    .navbar .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .navbar .nav-links {
+      display: flex;
+      gap: 15px;
+    }
+    @media (max-width: 768px) {
+      .navbar .nav-links {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+
+   
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px; 
+      margin-top: 50px; 
+    }
+    .small-image {
+      width: 400px; 
+      height: auto; 
+      border: 5px solid #4e4c4c;
+      border-radius: 8px; 
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+      transition: transform 0.3s; 
+      margin-top: 10px;
+    }
+    .small-image:hover {
+      transform: scale(1.1); 
+    }
+    #home h1 {
+      font-size: 50px; 
+      color: #f63232; 
+      text-align: center; 
+    }
+
+    #home p {
+      font-size: 20px; 
+      color: #141212; 
+      text-align:left; 
+      line-height: 1.8; 
+      max-width: 1500px; 
+      margin: 0 auto; 
+      margin-top: -50px;
+    }
+
+    footer {
+    text-align: center;
+    background-color: #49aee3;
+    color: rgb(9, 9, 9);
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Conference Management- 2024</div>
+    <div class="nav-links">
+      <a href="hometab.html">Home</a>
+      <a href="schedulltab.html">Schedule</a>
+      <a href="registerD.html">Register</a>
+      <a href="login.html">login</a>
+      <a href="Adash.html">Admin</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <div id="home">
+    <h1>Welcome to the Conference  Management System</h1><br></br>
+    <p>
+      Streamline your conference experience with our comprehensive Conference Management System,designed to simplify participant registrations, session scheduling, and attendance trackin while enhancing overall event efficiency.
+    </p>
+  </div>
+
+  <div class="image-container">
+    <img src="1.jpg" alt="Image 1" class="small-image">
+    <img src="2.jpg" alt="Image 2" class="small-image">
+    <img src="3.jpg" alt="Image 3" class="small-image">
+   
+  </div>
+  <footer>
+    <p>&copy; 2024 International Research Conference. All rights reserved.</p>
+   
+  </footer>
+</body>
+</html>

@@ -1,0 +1,179 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: rgb(238, 248, 242);
+  }
+
+  header {
+    background-color: #004080;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #0066cc;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #004080;
+}
+
+.navbar .logout {
+    background-color: #ff4d4d;
+}
+
+.navbar .logout:hover {
+    background-color: #cc0000;
+}
+
+/* Main Content */
+.dashboard-content {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.section h2 {
+    margin-bottom: 1rem;
+    color: #004080;
+}
+  #schedule {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Tracks Section */
+  .tracks {
+    margin-bottom: 70px;
+  }
+  
+  .tracks h2 {
+    margin-bottom: 25px;
+    font-size: 50px;
+    color: rgb(60, 144, 241);
+   
+  }
+  
+  .track {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 7px solid #220d4d;
+    border-radius: 15px;
+  }
+  
+  /* Filters Section */
+  .filters {
+    margin-bottom: 30px;
+    color: crimson;
+  }
+  
+  .filters h2 {
+    margin-bottom: 25px;
+  }
+  
+  .filters input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #0d0d0d;
+    border-radius: 3px;
+  }
+  
+  .filters select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  //* Schedule Section */
+.schedule {
+  padding: 40px;
+  background-color: #c0fadb;
+  text-align: center;
+}
+
+.schedule h1 {
+  font-size: 100px;
+  margin-bottom: 50px;
+  color: #d3000e;
+  text-align: center;
+  padding: 50px;
+}
+
+.schedule h1 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #e70f0f;
+}
+
+.schedule .day {
+  margin-top: 30px;
+}
+
+.session {
+  margin: 15px auto;
+  padding: 15px;
+  background-color: #aaeaaa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.session h3 {
+  color: #0056b3;
+}
+
+.session p {
+  margin: 5px 0;
+}
+
+.session button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.session button:hover {
+  background-color: #003d80;
+}
+
+* Tracks Section */
+.tracks {
+  padding: 30px;
+  background-color: #eaf2f8;
+  text-align: center;
+}
+
+.tracks p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+
+
+  

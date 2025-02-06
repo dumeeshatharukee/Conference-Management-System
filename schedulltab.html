@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="./icon.jpg" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conference Day Management System</title>
+  <link rel="stylesheet" href="schedule.css">
+  
+</head>
+<title>Participant Dashboard</title>
+    <link rel="stylesheet" href="pardash.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Participant Dashboard</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="#schedule">Conference Tracks</a>
+        <a href="#proceedings">Schedules</a>
+        <a href="#register-sessions">Register for Sessions</a>
+        <a href="navigationbar.html" class="logout">Logout</a>
+    </nav>
+<body>
+  <div id="schedule">
+    <div class="tracks">
+      <h2>Conference Tracks</h2>
+      <div class="track">
+        <h3>Track 1: Artificial Intelligence</h3>
+        <p>Explore AI applications in healthcare, automation, and more.</p>
+      </div>
+      <div class="track">
+        <h3>Track 2: Sustainable Engineering</h3>
+        <p>Learn about renewable energy and green technologies.</p>
+      </div>
+      <div class="track">
+        <h3>Track 3: Cloud Computing</h3>
+        <p>Explore the latest in cloud technologies and applications.</p>
+      </div>
+      <div class="track">
+        <h3>Track 4: Cyber Security</h3>
+        <p>Understand the importance of securing digital assets.</p>
+      </div>
+    </div>
+
+    <div class="schedule">
+      <h1>Day 1 Schedule</h1>
+      <div class="session">
+        <h3>Artificial Intelligence</h3>
+        <p><strong>Speaker:</strong> Dr. S. Senarath</p>
+        <p><strong>Time:</strong> 9:30 AM - 11:30 AM</p>
+        <p><strong>Venue:</strong> Room A</p>
+        <p><strong>Capacity:</strong> 15/50 available</p>
+        <button onclick="registerForSession('session1')">Register Now</button>
+      </div>
+      <div class="session">
+        <h3>Sustainable Engineering</h3>
+        <p><strong>Speaker:</strong> Dr. Abesekara</p>
+        <p><strong>Time:</strong> 10:00 AM - 12:00 PM</p>
+        <p><strong>Venue:</strong> Room B</p>
+        <p><strong>Capacity:</strong> 30/40 available</p>
+        <button onclick="registerForSession('session2')">Register Now</button>
+      </div>
+
+      <h1>Day 2 Schedule</h1>
+      <div class="session">
+        <h3>Cloud Computing</h3>
+        <p><strong>Speaker:</strong> Dr. Jayawardhana</p>
+        <p><strong>Time:</strong> 9:30 AM - 11:30 AM</p>
+        <p><strong>Venue:</strong> Room A</p>
+        <p><strong>Capacity:</strong> 15/50 available</p>
+        <button onclick="registerForSession('session3')">Register Now</button>
+      </div>
+      <div class="session">
+        <h3>Cyber Security</h3>
+        <p><strong>Speaker:</strong> Dr. Abesekara</p>
+        <p><strong>Time:</strong> 10:00 AM - 12:00 PM</p>
+        <p><strong>Venue:</strong> Room B</p>
+        <p><strong>Capacity:</strong> 30/40 available</p>
+        <button onclick="registerForSession('session4')">Register Now</button>
+      </div>
+    </div>
+
+    <section class="filters">
+      <h1>Find Your Sessions</h1>
+      <input type="text" placeholder="Search by title or speaker" id="search">
+      <select id="filter-day">
+        <option value="all">All Days</option>
+        <option value="day1">Day 1</option>
+        <option value="day2">Day 2</option>
+      </select>
+      <select id="filter-track">
+        <option value="all">All Tracks</option>
+        <option value="track1">Track 1</option>
+        <option value="track2">Track 2</option>
+        <option value="track3">Track 3</option>
+        <option value="track4">Track 4</option>
+      </select>
+    </section>
+
+    
+</body>
+</html>
